@@ -16,12 +16,12 @@ public class MainController {
 
     @javafx.fxml.FXML
     public void startClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("transaction-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("role-selection.fxml"));
         Parent root = (Parent)fxmlLoader.load();
         Scene scene = new Scene(root);
         Node node = (Node) actionEvent.getSource();
         Stage stage = (Stage) node.getScene().getWindow();
-        stage.setTitle("Transaction Form");
+        stage.setTitle("Select Role");
         stage.setScene(scene);
     }
 }

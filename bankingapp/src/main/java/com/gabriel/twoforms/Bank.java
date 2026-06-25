@@ -34,6 +34,29 @@ public class Bank {
             }
         }
     }
+
+    public static Account getAccount(int accountNumber) {
+        for (Account acc : accounts) {
+            if (acc.getAccountNumber() == accountNumber) {
+                return acc;
+            }
+        }
+        return null;
+    }
+
+    public static boolean modifyAccount(int accountNumber, String newOwner) {
+        for (Account acc : accounts) {
+            if (acc.getAccountNumber() == accountNumber) {
+                acc.setOwner(newOwner);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static boolean deleteAccount(int accountNumber) {
+        return accounts.removeIf(acc -> acc.getAccountNumber() == accountNumber);
+    }
 //
 //    private static void withdraw() {
 //        System.out.print("Enter account number: ");

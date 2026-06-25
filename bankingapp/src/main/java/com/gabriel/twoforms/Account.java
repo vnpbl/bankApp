@@ -15,6 +15,10 @@ public class Account {
     public String getOwner() { return owner; }
     public double getBalance() { return balance; }
 
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
