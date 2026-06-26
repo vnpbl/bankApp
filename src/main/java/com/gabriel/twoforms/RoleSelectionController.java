@@ -17,6 +17,10 @@ public class RoleSelectionController {
         switchScene(event, "customer-dashboard.fxml");
     }
 
+    public void OnBackClick(ActionEvent event) throws IOException {
+        switchScene(event, "mainpage-view.fxml");
+    }
+
     private void switchScene(ActionEvent event, String fxmlFile) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

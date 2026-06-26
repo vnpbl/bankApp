@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83ce606e-ece3-4e17-bcbe-1fae8ba3bb03" name="Changes" comment="" />
+    <list default="true" id="83ce606e-ece3-4e17-bcbe-1fae8ba3bb03" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gabriel/twoforms/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gabriel/twoforms/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gabriel/twoforms/RoleSelectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gabriel/twoforms/RoleSelectionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/gabriel/twoforms/role-selection.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/gabriel/twoforms/role-selection.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +113,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
