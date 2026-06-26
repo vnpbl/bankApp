@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <StackPane prefHeight="405.0" prefWidth="438.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.RoleSelectionController">
@@ -35,3 +34,8 @@
       <Insets bottom="30.0" top="30.0" />
    </padding>
 </StackPane>
+<VBox alignment="CENTER" spacing="20.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.RoleSelectionController">
+    <Label text="Select User Role" styleClass="header-label"/>
+    <Button text="Login as Admin" onAction="#goToAdmin" styleClass="primary-button" prefWidth="200"/>
+    <Button text="Login as Customer" onAction="#goToCustomer" styleClass="secondary-button" prefWidth="200"/>
+</VBox>
