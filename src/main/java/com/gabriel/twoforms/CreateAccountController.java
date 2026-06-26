@@ -48,4 +48,10 @@ public class CreateAccountController {
 //            System.out.println(acc.getAccountNumber() + " " + acc.getOwner() + " " + acc.getBalance());
 //        }
     }
+
+    public void goBack(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("admin-dashboard.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+    }
 }
