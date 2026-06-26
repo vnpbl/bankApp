@@ -13,3 +13,4 @@ com\gabriel\twoforms\DepositController.class
 com\gabriel\twoforms\MainController.class
 com\gabriel\twoforms\TransactionController.class
 com\gabriel\twoforms\CreateAccountController.class
+com\gabriel\twoforms\Database.class

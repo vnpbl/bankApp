@@ -26,6 +26,9 @@ public class CustomerController {
             Account acc = Bank.getAccount(accNum);
             if (acc != null) {
                 acc.deposit(amount);
+
+                Bank.updateBalance(accNum, acc.getBalance());
+
                 messageLabel.setText("Successfully deposited: $" + amount);
             } else {
                 messageLabel.setText("Account not found.");
@@ -45,6 +48,9 @@ public class CustomerController {
             if (acc != null) {
                 if(amount > 0 && amount <= acc.getBalance()){
                     acc.withdraw(amount);
+
+                    Bank.updateBalance(accNum, acc.getBalance());
+
                     messageLabel.setText("Successfully withdrew: $" + amount);
                 } else {
                     messageLabel.setText("Insufficient funds.");
