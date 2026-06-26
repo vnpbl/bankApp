@@ -1,0 +1,123 @@
+.root {
+    -fx-background-color: #F7FAFD;
+    -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
+.header-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1E2430;
+    -fx-padding: 10px 0 20px 0;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #4A5568;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD8E6;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+.text-field:focused {
+    -fx-border-color: #2BACE2;
+    -fx-border-width: 2px;
+}
+
+.button {
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+    -fx-font-weight: 700;
+    -fx-padding: 9 16 9 16;
+}
+
+/* Primary buttons (blue, draws attention) */
+.primary-button {
+    -fx-background-color: #0038A8;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.primary-button:hover {
+    -fx-background-color: #002868;
+}
+
+.secondary-button {
+    -fx-background-color: #EDF4FA;
+    -fx-text-fill: #0038A8;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.secondary-button:hover {
+    -fx-background-color: #D9ECF7;
+}
+
+.bold-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1E2430;
+}
+
+.main-picture {
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-clip: inherit;
+}
+
+.front-card {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #D8E0EC;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0, 56, 168, 0.16), 18, 0.12, 0, 6);
+}
+
+.app-shell {
+    -fx-background-color: linear-gradient(to bottom right, #E6EFFA, #F7FBFF);
+}
+
+.menu-button {
+    -fx-alignment: CENTER;
+    -fx-background-color: #F7FAFC;
+    -fx-border-color: #DBE6F2;
+}
+.menu-button:hover {
+    -fx-background-color: #E6F6FD;
+    -fx-border-color: #2BACE2;
+}
+
+.screen-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6B7385;
+}
+
+.danger-button {
+    -fx-background-color: #ED1B2E;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.danger-button:hover {
+    -fx-background-color: #C4101F;
+}
+.background-pane {
+    -fx-background-image: url("images/bgpagibig.jpg");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+

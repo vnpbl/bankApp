@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="405.0" prefWidth="451.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.MainController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="345.0" prefWidth="400.0" styleClass="front-card">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="false" styleClass="main-picture">
+               <image>
+                  <Image url="@images/pagibig.jpg" />
+               </image>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="148.0" prefWidth="299.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="333.0" styleClass="bold-text" text="Welcome to Pag-Ibig Funds">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Secure banking made simple" />
+               </children>
+            </VBox>
+            <Button fx:id="btn_start" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startClick" prefHeight="25.0" prefWidth="163.0" styleClass="primary-button" text="Click here to start" />
+         </children>
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+         <padding>
+            <Insets bottom="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</StackPane>

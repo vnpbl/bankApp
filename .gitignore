@@ -1,0 +1,10 @@
+# Maven
+target/
+
+# IntelliJ
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+
+# Java
+*.class
