@@ -120,4 +120,54 @@
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
 }
+.balance-banner {
+    -fx-background-color: #e6f6fd;
+    -fx-background-radius: 8;
+    -fx-border-color: #aee0f2;
+    -fx-border-radius: 8;
+    -fx-padding: 14;
+}
 
+.balance-value {
+    -fx-font-size: 18px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #0038a8;
+}
+
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-border-color: #dbe6f2;
+    -fx-border-radius: 8;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #0038a8;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-padding: 10 8 10 8;
+}
+
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent transparent #edf2f7 transparent;
+    -fx-padding: 5 0 5 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f8fafc;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #e6f6fd;
+    -fx-text-background-color: #002868;
+}

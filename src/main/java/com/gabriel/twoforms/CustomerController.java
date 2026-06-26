@@ -1,5 +1,6 @@
 package com.gabriel.twoforms;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -82,5 +83,9 @@ public class CustomerController {
         Parent root = FXMLLoader.load(getClass().getResource("role-selection.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
+    }
+
+    public void exitClick(ActionEvent actionEvent) {
+        Platform.exit();
     }
 }

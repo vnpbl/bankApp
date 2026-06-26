@@ -1,5 +1,6 @@
 package com.gabriel.twoforms;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -35,5 +36,8 @@ public class AdminController {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));
         stage.show();
+    }
+    public void exitClick(ActionEvent actionEvent) {
+        Platform.exit();
     }
 }

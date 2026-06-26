@@ -40,7 +40,7 @@
          <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
             <children>
                 <Button mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="122.0" styleClass="secondary-button" text="Logout" HBox.hgrow="ALWAYS" />
-               <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="123.0" styleClass="danger-button" stylesheets="@style.css" text="Button" />
+               <Button mnemonicParsing="false" onAction="#exitClick" prefHeight="38.0" prefWidth="123.0" styleClass="danger-button" stylesheets="@style.css" text="Exit" />
             </children>
          </HBox>
       </VBox>

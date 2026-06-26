@@ -11,7 +11,7 @@
          <children>
             <HBox prefHeight="66.0" prefWidth="402.0">
                <children>
-                  <ImageView fitHeight="75.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="90.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/pagibig.jpg" />
                      </image>
