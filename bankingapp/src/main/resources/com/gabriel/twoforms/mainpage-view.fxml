@@ -5,27 +5,17 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="360.0" styleClass="app-shell" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.MainController">
+<AnchorPane prefHeight="200.0" prefWidth="311.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.MainController">
    <children>
-      <VBox alignment="CENTER" layoutX="15.0" layoutY="23.0" prefHeight="354.0" prefWidth="331.0" styleClass="front-card">
-         <children>
-            <ImageView fitHeight="136.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" styleClass="main-picture">
-               <image>
-                  <Image url="@images/pagibig.jpg" />
-               </image>
-            </ImageView>
-            <VBox alignment="CENTER" prefHeight="148.0" prefWidth="299.0">
-               <children>
-                  <Label alignment="CENTER" prefHeight="35.0" prefWidth="333.0" styleClass="bold-text" text="Welcome to Pag-Ibig Funds">
-                     <font>
-                        <Font size="24.0" />
-                     </font>
-                  </Label>
-                  <Label text="Secure banking made simple" />
-               </children>
-            </VBox>
-            <Button fx:id="btn_start" contentDisplay="CENTER" mnemonicParsing="false" onAction="#startClick" prefHeight="25.0" prefWidth="163.0" styleClass="primary-button" text="Click here to start" />
-         </children>
-      </VBox>
+      <Label layoutX="64.0" layoutY="95.0" text="Welcome to ABank" AnchorPane.leftAnchor="64.0" AnchorPane.topAnchor="95.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="100.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@images/A.PNG" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_start" layoutX="101.0" layoutY="146.0" mnemonicParsing="false" onAction="#startClick" text="Click here to start" />
    </children>
 </AnchorPane>

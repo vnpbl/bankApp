@@ -33,7 +33,7 @@ public class CreateAccountController {
 
     @javafx.fxml.FXML
     public void OnCreateSubmit(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("admin-dashboard.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("transaction-view.fxml"));
         Parent root = (Parent)fxmlLoader.load();
         Scene scene = new Scene(root);
         Node node = (Node) actionEvent.getSource();

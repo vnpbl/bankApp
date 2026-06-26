@@ -1,7 +1,6 @@
 package com.gabriel.twoforms;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -17,10 +16,6 @@ public class RoleSelectionController {
     public void goToCustomer(ActionEvent event) throws IOException {
         switchScene(event, "customer-dashboard.fxml");
     }
-    public void OnBackClick(ActionEvent actionEvent) throws IOException {
-       switchScene(actionEvent, "mainpage-view.fxml");
-    }
-
 
     private void switchScene(ActionEvent event, String fxmlFile) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource(fxmlFile));
@@ -29,4 +24,3 @@ public class RoleSelectionController {
         stage.show();
     }
 }
-

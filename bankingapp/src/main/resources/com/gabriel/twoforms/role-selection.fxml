@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="393.0" prefWidth="400.0" spacing="20.0" styleClass="app-shell" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.RoleSelectionController">
-   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@images/pagibig.jpg" />
-      </image>
-   </ImageView>
-    <Label styleClass="bold-text" text="Select User Role" />
-    <Button onAction="#goToAdmin" prefWidth="200" styleClass="secondary-button" stylesheets="@style.css" text="Login as Admin" />
-    <Button onAction="#goToCustomer" prefWidth="200" styleClass="secondary-button" text="Login as Customer" />
-   <Button mnemonicParsing="false" onAction="#OnBackClick" prefHeight="39.0" prefWidth="87.0" styleClass="menu-button" stylesheets="@style.css" text="Button" />
+<VBox alignment="CENTER" spacing="20.0" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.RoleSelectionController">
+    <Label text="Select User Role" styleClass="header-label"/>
+    <Button text="Login as Admin" onAction="#goToAdmin" styleClass="primary-button" prefWidth="200"/>
+    <Button text="Login as Customer" onAction="#goToCustomer" styleClass="secondary-button" prefWidth="200"/>
 </VBox>
