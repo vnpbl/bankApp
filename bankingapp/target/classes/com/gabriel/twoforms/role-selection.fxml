@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="393.0" prefWidth="400.0" spacing="20.0" styleClass="app-shell" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.RoleSelectionController">
-   <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-      <image>
-         <Image url="@images/pagibig.jpg" />
-      </image>
-   </ImageView>
-    <Label styleClass="bold-text" text="Select User Role" />
-    <Button onAction="#goToAdmin" prefWidth="200" styleClass="secondary-button" stylesheets="@style.css" text="Login as Admin" />
-    <Button onAction="#goToCustomer" prefWidth="200" styleClass="secondary-button" text="Login as Customer" />
-   <Button mnemonicParsing="false" onAction="#OnBackClick" prefHeight="39.0" prefWidth="87.0" styleClass="menu-button" stylesheets="@style.css" text="Button" />
-</VBox>
+<StackPane prefHeight="405.0" prefWidth="438.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.RoleSelectionController">
+   <children>
+      <VBox alignment="CENTER" maxWidth="360.0" prefHeight="348.0" prefWidth="360.0" spacing="18.0" styleClass="front-card" stylesheets="@style.css">
+         <HBox alignment="CENTER_LEFT" prefHeight="87.0" prefWidth="300.0">
+            <children>
+               <ImageView fitHeight="92.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/pagibig.jpg" />
+                  </image>
+               </ImageView>
+               <VBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="205.0">
+                  <children>
+                      <Label styleClass="bold-text" text="Select User Role" />
+                     <Label text="Choose your banking workspace" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+          <Button onAction="#goToAdmin" prefHeight="40.0" prefWidth="294.0" styleClass="secondary-button" stylesheets="@style.css" text="Login as Admin" />
+          <Button onAction="#goToCustomer" prefHeight="40.0" prefWidth="295.0" styleClass="secondary-button" text="Login as Customer" />
+         <Button mnemonicParsing="false" onAction="#OnBackClick" prefHeight="39.0" prefWidth="87.0" styleClass="danger-button" stylesheets="@style.css" text="Back" />
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" top="30.0" />
+   </padding>
+</StackPane>

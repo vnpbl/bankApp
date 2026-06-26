@@ -1,27 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="400.0" spacing="15.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.CustomerController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 
-    <Label styleClass="header-label" text="Customer Dashboard" />
-
-    <Label styleClass="label" text="Account Number:" />
-    <TextField fx:id="accNumField" maxWidth="250" promptText="Enter your account number" styleClass="text-field" />
-
-    <Label styleClass="label" text="Amount (For Deposit/Withdraw):" />
-    <TextField fx:id="amountField" maxWidth="250" promptText="Enter amount" styleClass="text-field" />
-
-    <Label fx:id="messageLabel" styleClass="label" textFill="#0066FF" />
-
-    <Button mnemonicParsing="false" onAction="#handleDeposit" prefWidth="250.0" styleClass="primary-button" text="Deposit" />
-    <Button mnemonicParsing="false" onAction="#handleWithdraw" prefWidth="250.0" styleClass="secondary-button" text="Withdraw" />
-    <Button mnemonicParsing="false" onAction="#handleBalance" prefWidth="250.0" styleClass="secondary-button" text="Check Balance" />
-    <Button mnemonicParsing="false" onAction="#logout" prefWidth="250.0" styleClass="secondary-button" text="Logout" />
-</VBox>
+<StackPane prefHeight="652.0" prefWidth="555.0" styleClass="background-pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gabriel.twoforms.CustomerController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="582.0" maxWidth="504.0" prefHeight="548.0" prefWidth="470.0" spacing="18.0" styleClass="front-card">
+          <padding>
+              <Insets left="30.0" right="30.0" />
+          </padding>
+         <HBox alignment="TOP_CENTER" prefHeight="84.0" prefWidth="427.0">
+            <children>
+               <ImageView fitHeight="92.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/pagibig.jpg" />
+                  </image>
+               </ImageView>
+               <VBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="293.0">
+                  <children>
+                  
+                      <Label styleClass="bold-text" text="Customer Menu" />
+                     <Label text="Everyday Account Service" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <Label fx:id="messageLabel" />
+         <HBox alignment="CENTER" prefHeight="74.0" prefWidth="442.0" spacing="20.0">
+            <children>
+               <VBox prefHeight="99.0" prefWidth="204.0">
+                  <children>
+                  
+                      <Label styleClass="label" text="Account Number:" />
+                      <TextField fx:id="accNumField" maxWidth="250" promptText="Enter your account number" styleClass="text-field" />
+                  </children>
+               </VBox>
+               <VBox prefHeight="108.0" prefWidth="220.0">
+                  <children>
+                  
+                      <Label styleClass="label" text="Amount (For Deposit/Withdraw):" />
+                      <TextField fx:id="amountField" maxWidth="250" promptText="Enter amount" styleClass="text-field" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <VBox alignment="CENTER" prefHeight="118.0" prefWidth="428.0" spacing="10.0">
+            <children>
+            
+                <Button mnemonicParsing="false" onAction="#handleDeposit" prefWidth="250.0" styleClass="primary-button" text="Deposit" />
+                <Button mnemonicParsing="false" onAction="#handleWithdraw" prefWidth="250.0" styleClass="secondary-button" text="Withdraw" />
+                <Button mnemonicParsing="false" onAction="#handleBalance" prefWidth="250.0" styleClass="secondary-button" text="Check Balance" />
+            </children>
+         </VBox>
+         <HBox alignment="CENTER" prefHeight="30.0" prefWidth="429.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#logout" prefHeight="38.0" prefWidth="168.0" styleClass="secondary-button" text="Logout" />
+               <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="142.0" styleClass="danger-button" stylesheets="@style.css" text="Button" />
+            </children>
+         </HBox>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="28.0" left="28.0" right="28.0" top="28.0" />
+   </padding>
+</StackPane>

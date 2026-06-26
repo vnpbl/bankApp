@@ -1,36 +1,33 @@
-/* Minimalist global background and typography */
 .root {
-    -fx-background-color: #FAFAFA;
+    -fx-background-color: #F7FAFD;
     -fx-font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
 }
 
-/* High-visibility headers */
 .header-label {
     -fx-font-size: 22px;
     -fx-font-weight: bold;
-    -fx-text-fill: #1A1A1A;
+    -fx-text-fill: #1E2430;
     -fx-padding: 10px 0 20px 0;
 }
 
-/* Clean, standard text */
 .label {
     -fx-font-size: 14px;
-    -fx-text-fill: #4A4A4A;
+    -fx-text-fill: #4A5568;
 }
 
-/* Low-friction input fields */
 .text-field {
     -fx-background-color: #FFFFFF;
-    -fx-border-color: #D1D5DB;
+    -fx-border-color: #CBD8E6;
     -fx-border-radius: 6px;
     -fx-background-radius: 6px;
     -fx-padding: 10px;
     -fx-font-size: 14px;
 }
 .text-field:focused {
-    -fx-border-color: #3B82F6;
+    -fx-border-color: #2BACE2;
     -fx-border-width: 2px;
 }
+
 .button {
     -fx-background-radius: 6;
     -fx-border-radius: 6;
@@ -38,9 +35,9 @@
     -fx-font-weight: 700;
     -fx-padding: 9 16 9 16;
 }
-/* Primary buttons (blue, draws attention) */
+
 .primary-button {
-    -fx-background-color: #3B82F6;
+    -fx-background-color: #0038A8;
     -fx-text-fill: white;
     -fx-font-size: 14px;
     -fx-font-weight: bold;
@@ -49,13 +46,12 @@
     -fx-cursor: hand;
 }
 .primary-button:hover {
-    -fx-background-color: #2563EB;
+    -fx-background-color: #002868;
 }
 
-/* Secondary buttons (gray, for less critical actions) */
 .secondary-button {
-    -fx-background-color: #E5E7EB;
-    -fx-text-fill: #374151;
+    -fx-background-color: #EDF4FA;
+    -fx-text-fill: #0038A8;
     -fx-font-size: 14px;
     -fx-font-weight: bold;
     -fx-padding: 10px 20px;
@@ -63,37 +59,64 @@
     -fx-cursor: hand;
 }
 .secondary-button:hover {
-    -fx-background-color: #D1D5DB;
+    -fx-background-color: #D9ECF7;
 }
+
 .bold-text {
     -fx-font-size: 24px;
     -fx-font-weight: 700;
-    -fx-text-fill: #102033;
+    -fx-text-fill: #1E2430;
 }
+
 .main-picture {
     -fx-background-radius: 15;
     -fx-border-radius: 15;
     -fx-clip: inherit;
 }
+
 .front-card {
     -fx-background-color: white;
     -fx-background-radius: 8;
-    -fx-border-color: #dbe6f2;
+    -fx-border-color: #D8E0EC;
     -fx-border-radius: 8;
-    -fx-effect: dropshadow(gaussian, rgba(20, 45, 75, 0.16), 18, 0.12, 0, 6);
+    -fx-effect: dropshadow(gaussian, rgba(0, 56, 168, 0.16), 18, 0.12, 0, 6);
 }
+
 .app-shell {
-    -fx-background-color: linear-gradient(to bottom right, #e8f1fb, #f8fbff);
+    -fx-background-color: linear-gradient(to bottom right, #E6EFFA, #F7FBFF);
 }
+
 .menu-button {
     -fx-alignment: CENTER;
-    -fx-background-color: #f7fafc;
-    -fx-border-color: #dbe6f2;
+    -fx-background-color: #F7FAFC;
+    -fx-border-color: #DBE6F2;
 }
-
 .menu-button:hover {
-    -fx-background-color: #eaf4f7;
-    -fx-border-color: #91c5cf;
+    -fx-background-color: #E6F6FD;
+    -fx-border-color: #2BACE2;
 }
 
+.screen-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #6B7385;
+}
+
+.danger-button {
+    -fx-background-color: #ED1B2E;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+.danger-button:hover {
+    -fx-background-color: #C4101F;
+}
+.background-pane {
+    -fx-background-image: url("images/bgpagibig.jpg");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
 
