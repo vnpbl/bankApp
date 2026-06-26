@@ -47,9 +47,9 @@
          </GridPane>
          <HBox alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="398.0" spacing="18.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="141.0" styleClass="secondary-button" text="Back to Dashboard" />
+                <Button mnemonicParsing="false" onAction="#goBack" prefHeight="38.0" prefWidth="91.0" styleClass="secondary-button" text="Back" />
             
-                <Button mnemonicParsing="false" onAction="#handleModify" prefHeight="38.0" prefWidth="137.0" styleClass="primary-button" text="Update Name" />
+                <Button mnemonicParsing="false" onAction="#handleModify" prefHeight="38.0" prefWidth="90.0" styleClass="primary-button" text="Update" />
             </children>
          </HBox>
       </VBox>
